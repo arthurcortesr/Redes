@@ -1,0 +1,3 @@
+Exercício de redes criado através do curso Redes parte 1: conceitos e prática da Alura.
+
+Foi configurado uma rede com acesso a dois servidores, servidor DNS e um servidor Web.
