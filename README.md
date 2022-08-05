@@ -6,7 +6,7 @@ Este repositório contém projetos e exercícios de redes, topologias criadas e 
 
 ## **Projetos**
 
-- [Redes parte 1]
+- [Redes parte 1](https://github.com/arthurcortesr/Redes/tree/main/redes1)
 - [Redes parte 2]
 - [Redes parte 3]
 
