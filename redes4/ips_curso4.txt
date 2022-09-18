@@ -1,0 +1,115 @@
+REDE INTERNA
+finanças
+172.16.2.130
+255.255.255.128
+
+vendas
+172.16.0.2
+255.255.254.0
+
+servidor
+172.16.3.2
+255.255.255.128
+
+roteador interno
+150.1.1.2 
+255.255.255.252
+
+
+
+REDE EXTERNA
+roteador provedor
+Serial 0/0/0:
+150.1.1.1
+255.255.255.252
+
+
+
+REDE EXTERNA - WAN
+Ip de rede: 150.1.1.0
+Ip sub-rede1: 150.1.1.0 --- Ip broadcast sub-rede1: 150.1.1.3 --- Ip's disponiveis 150.1.1.1 -> 150.1.1.2
+Ip sub-rede2: 150.1.1.4 --- Ip broadcast sub-rede2: 150.1.1.7 --- Ip's disponiveis 150.1.1.5 -> 150.1.1.6
+Ip sub-rede3: 150.1.1.8 --- Ip broadcast sub-rede3: 15.1.1.11 --- Ip's disponiveis 150.1.1.7 -> 150.1.1.10
+
+roteador provedor (router 0)
+FastEthernet 0/0:
+150.1.1.5 
+255.255.255.252
+
+roteador externo (router 5)
+FastEthernet 0/0:
+150.1.1.6
+255.255.255.252
+FastEthernet 0/1:
+150.1.1.9
+255.255.255.252
+Serial 0/1/0
+160.1.1.1
+255.255.255.252
+
+router 2
+Serial 0/1/0:
+160.1.1.2
+255.255.255.252
+FastEthernet 0/1:
+170.1.1.1 
+255.255.255.252
+FastEthernet 0/0:
+180.1.1.1 
+255.255.255.252
+
+router 3:
+FastEthernet 0/0:
+180.1.1.2 
+255.255.252
+FastEthernet 0/1:
+190.1.1.1
+255.255.255.252
+
+server 1
+150.1.1.10
+255.255.255.252
+150.1.1.9 -> default gateway
+
+server 2
+170.1.1.2
+255.255.255.252
+170.1.1.1 -> default gateway
+
+server 3
+190.1.1.2
+255.255.255.252
+190.1.1.1 -> default gateway
+
+160.1.1.0
+170.1.1.0
+180.1.1.0
+190.1.1.0
+
+
+
+DNS server:
+170.1.1.2
+
+
+
+Endereço IPv6:
+2001:0BAA:0000:0000::AAAA/64
+Default Gateway:
+2001:0BAA:0000:0000::BBBB
+
+Endereço IPv6 VLAN VENDAS
+Default Gateway:
+2000:0BAA:0000:0000::BBBB/64
+IPv6 Gerente Vendas:
+2000:0BAA:0000:0000::CCCC/64
+IPv6 Funcionário Vendas:
+2000:0BAA:0000:0000::AAAA/64
+
+Endereço IPv6 VLAN FINANCAS
+Default Gateway:
+2002:0BAA:0000:0000::BBBB/64
+IPv6 Gerente Finanças:
+2002:0BAA:0000:0000::AAAA/64
+IPv6 Funcionario Finanças:
+2002:0BAA:0000:0000::CCCC/64
