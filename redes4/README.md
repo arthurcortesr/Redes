@@ -1,6 +1,6 @@
 # Redes parte 4: configuração de protocolos de roteamento e IPv6
 
-Esta topologia e configuração de rede foi feita como exercício do curso [Redes parte 4: configuração de protocolos de roteamento e IPv6]([https://cursos.alura.com.br/course/redes-introducao](https://cursos.alura.com.br/course/redes-parte-4-configuracao-de-protocolos-de-roteamento-ipv6)) da plataforma [Alura](alura.com.br)
+Esta topologia e configuração de rede foi feita como exercício do curso [Redes parte 1: conceitos e prática](https://cursos.alura.com.br/course/redes-parte-4-configuracao-de-protocolos-de-roteamento-ipv6) da plataforma [Alura](alura.com.br)
 
 Foi montado e configurado duas redes de provedor externo.
 Foi configurado o protocolo RIP em uma das redes do provedor externo.
